@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/temperature"
+            android:textColor="@color/red"
+            android:layout_marginLeft="20dp"
+            />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="See More Details"
+            android:id="@+id/moreDetails"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
